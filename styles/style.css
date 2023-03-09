@@ -346,7 +346,7 @@ body {
 
 @media (max-width: 1200px) {
     .cabecalho__menu__link {
-        font-size: 2.355vw;
+        font-size: 3.5vw;
     }
 
     .span2 {
@@ -370,14 +370,14 @@ body {
     }
 
     .apresentacao__inicial__titulo {
-        font-size: 3.45vw;
+        font-size: 4.5vw;
         min-width: 280px;
-        width: 50vw;
+        width: 62vw;
     }
 
     .apresentacao__inicial__texto {
-        font-size: 2.7vw;
-        width: 55vw;
+        font-size: 4vw;
+        width: 79vw;
         min-width: 17rem;
         font-weight: 600;
     }
@@ -421,11 +421,11 @@ body {
 
     .chuck__box {
         justify-content: center;
-        width: 80%;
+        width: 95%;
     }
 
     .chuck__img {
-        width: 50vw;
+        width: 80vw;
     }
 
     .imglogo {
