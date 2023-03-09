@@ -51,7 +51,7 @@ body {
 .span1 {
     color: var(--cor-tercearia);
     border: 1px solid var(--cor-tercearia);
-    padding: 0 18.7px;
+    padding-inline:  18.7px;
     background-color: var(--cor-primaria);
 }
 
@@ -352,7 +352,7 @@ body {
         white-space: nowrap;
         color: var(--cor-tercearia);
         border: 1px solid var(--cor-tercearia);
-        padding: 0 0.5rem;
+        padding-inline:  0.5rem;
         background-color: var(--cor-primaria);
     }
 
@@ -789,7 +789,7 @@ body {
     }
 
     .span1 {
-        padding-bottom: 14.4px;
+        padding-inline: 2.4px;
     }
 
     .txt__creditos {
