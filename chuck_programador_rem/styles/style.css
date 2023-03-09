@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Tilt+Neon&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #FFFFFF;
+    --cor-tercearia: #ad5555;
+    --cor-quartenaria: #302e2e;
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --fonte-tercearia: 'Tilt Neon', sans-serif;
+    --tamanhofonte-primaria: 2.3rem;
+    --tamanhofonte-secundaria: 1.8rem;
+    --tamanhofonte-terceario: 1.4rem;
+    --tamanhofonte-quartenaria: 1.25rem;
+}
+
+* {
+    line-height: 1.3;
+}
+
+.cabecalho {
+    background-color: var(--cor-tercearia);
+    padding-inline: 450px;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 112px;
+    height: 3.5px;
+}
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    font-size: 3.33rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    padding-top: 7.2px;
+}
+
+body {
+    min-width: 320px;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-tercearia);
+}
+
+.span1 {
+    color: var(--cor-tercearia);
+    border: 1px solid var(--cor-tercearia);
+    padding: 0 18.7px;
+    background-color: var(--cor-primaria);
+}
+
+.span2 {
+    color: var(--cor-tercearia);
+    border: 3.5px solid var(--cor-tercearia);
+    padding: 36px 37.6px 22.5px;
+    background-color: var(--cor-primaria);
+}
+
+.span2:hover {
+    background-color: var(--cor-quartenaria);
+}
+
+.apresentacao__box {
+    padding: 187.5px 3.5% 112.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 74px;
+}
+
+.apresentacao__inicial {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    text-align: center;
+    align-items: center;
+}
+
+.apresentacao__inicial__titulo {
+    font-size: 4.8rem;
+    font-family: var(--fonte-primaria);
+    text-align: center;
+}
+
+.apresentacao__inicial__texto {
+    width: 1350px;
+    font-size: 3.75rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.painel__apresentacao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+
+.apresentacao__links__box__primario {
+    flex-direction: column;
+    width: 655.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.apresentacao__links__box__secundario {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 56.25px;
+}
+
+.apresentacao__links__subtitulo__box {
+    width: 450px;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-tercearia);
+}
+
+.apresentacao__links__subtitulo {
+    white-space: nowrap;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 2.7rem;
+    color: var(--cor-primaria);
+    text-align: center;
+    line-height: 1.6;
+}
+
+.apresentacao__links__botao {
+    padding: 18.75px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+    font-size: 2.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 0.15rem solid var(--cor-tercearia);
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    width: 450px;
+}
+
+.apresentacao__links__botao:hover {
+    background-color: var(--cor-quartenaria);
+}
+
+.imglogo {
+    width: 75px;
+}
+
+.chuck__box {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.chuck__img {
+    border: 0.15rem solid var(--cor-tercearia);
+    border-radius: 0.3rem;
+    width: 1250px;
+}
+
+.sobre__mim__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 187.5px 3.5% 112.5px;
+    gap: 75px;
+
+}
+
+.sobre__mim__texto__box {
+    width: 1275.190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 75px;
+    text-align: center;
+}
+
+.sobre__mim__titulo {
+    font-size: 4.75rem;
+    color: var(--cor-tercearia);
+    font-family: var(--fonte-primaria);
+    width: 1125.190px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.sobre__mim__paragrado {
+    font-size: 3.95rem;
+    font-family: var(--fonte-secundaria);
+    font-style: italic;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.chuck__box__about {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+.chuck__img__about {
+    width: 1250px;
+    border: 0.15rem solid var(--cor-tercearia);
+    border-radius: 0.3rem;
+}
+
+.rodape {
+    background-color: var(--cor-tercearia);
+    color: var(--cor-primaria);
+    padding: 18.75px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 37.5px;
+}
+
+.rodape_flork_box {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.florktxt {
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 3.3rem;
+    font-weight: 600;
+}
+
+.florkimg {
+    width: 375px;
+}
+
+.creditos__box {
+    width: 99%;
+    border-radius: 0.3rem;
+    background-color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.devtxt {
+    font-size: 2.5rem;
+    color: var(--cor-tercearia);
+    width: 100%;
+    line-height: 1.4;
+    font-family: var(--fonte-secundaria);
+    padding-block: 37.6px;
+}
+
+.dev__link__box {
+    display: flex;
+    gap: 56.4px;
+    padding-bottom: 37.6px;
+}
+
+.dev__link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    border: 0.05rem solid var(--cor-tercearia);
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    width: 337px;
+    font-size: 2.5rem;
+    padding: 9.4px 0;
+}
+
+.dev__logo__link {
+    width: 75px;
+}
+
+.ref__box {
+
+    color: var(--cor-tercearia);
+    width: 100%;
+    line-height: 1.7;
+    border: 0.05rem solid var(--cor-tercearia);
+    padding: 37.6px 0;
+}
+
+.txt__creditos {
+    font-size: 2.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.creditos__link {
+    font-family: var(--fonte-tercearia);
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    padding: 0 16.6px;
+    border: 0.05rem solid var(--cor-secundaria);
+    border-radius: 0.3rem;
+    line-height: 1.6;
+}
+
+.creditos__link:hover {
+    background-color: var(--cor-quartenaria);
+}
+
+.branco {
+    color: var(--cor-secundaria);
+}
+
+@media (max-width: 2560px) {
+    .cabecalho {
+        padding-inline: 216px;
+    }
+
+    .cabecalho__menu {
+        gap: 3rem;
+    }
+
+    .cabecalho__menu__link {
+        font-size: 1.6rem;
+    }
+
+    .titulo-destaque {
+        color: var(--cor-tercearia);
+    }
+
+    .span1 {
+        white-space: nowrap;
+        color: var(--cor-tercearia);
+        border: 1px solid var(--cor-tercearia);
+        padding: 0 0.5rem;
+        background-color: var(--cor-primaria);
+    }
+
+    .span2 {
+        padding: 2rem 1rem 0.6rem;
+    }
+
+
+    .apresentacao__box {
+        padding: 5rem 3.5% 3rem;
+        gap: 2rem;
+    }
+
+    .apresentacao__inicial {
+        gap: 2rem;
+    }
+
+    .apresentacao__inicial__titulo {
+        font-size: var(--tamanhofonte-primaria);
+    }
+
+    .apresentacao__inicial__texto {
+        width: 37rem;
+        font-size: var(--tamanhofonte-secundaria);
+    }
+
+    .painel__apresentacao {
+        gap: 2rem;
+    }
+
+    .apresentacao__links__box__primario {
+        width: 18rem;
+        gap: 21.6px;
+    }
+
+    .apresentacao__links__box__secundario {
+        gap: 1.5rem;
+    }
+
+    .apresentacao__links__subtitulo__box {
+        width: 12rem;
+    }
+
+    .apresentacao__links__subtitulo {
+        font-size: 1.3rem;
+    }
+
+    .apresentacao__links__botao {
+        padding: 0.5rem 0;
+        font-size: var(--tamanhofonte-terceario);
+        width: 12rem;
+    }
+
+    .imglogo {
+        width: 2rem;
+    }
+
+    .chuck__img {
+        width: 600px;
+    }
+
+    .sobre__mim__box {
+        padding: 90px 3.5% 54px;
+        gap: 2rem;
+    }
+
+    .sobre__mim__texto__box {
+        width: 34.01rem;
+        gap: 2rem;
+    }
+
+    .sobre__mim__titulo {
+        font-size: var(--tamanhofonte-primaria);
+        width: 30rem;
+    }
+
+    .sobre__mim__paragrado {
+        font-size: 1.9rem;
+    }
+
+    .chuck__img__about {
+        width: 600px;
+    }
+
+    .rodape {
+        padding: 0.5rem 0;
+        gap: 1rem;
+    }
+
+    .florktxt {
+        font-size: 1.6rem;
+    }
+
+    .florkimg {
+        width: 10rem;
+    }
+
+    .devtxt {
+        font-size: 1.2rem;
+        padding: 1rem 0 1rem 0;
+    }
+
+    .dev__link__box {
+        gap: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .dev__link {
+        width: 9rem;
+        font-size: 1.2rem;
+        padding: 0.25rem 0;
+    }
+
+    .dev__logo__link {
+        width: 2rem;
+    }
+
+    .ref__box {
+
+        padding: 1rem 0 1rem 0;
+    }
+
+    .txt__creditos {
+        font-size: 1.2rem;
+
+    }
+
+    .creditos__link {
+
+        padding: 0 8px;
+
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho__menu__link {
+        font-size: 0.94rem;
+    }
+
+    .cabecalho {
+        padding-inline: 135px;
+    }
+
+    .span2 {
+        padding: 0.3rem 1rem 7.2px;
+    }
+
+    .span1 {
+        padding-inline: 5.4px;
+    }
+
+    .apresentacao__box {
+        padding: 4rem 3.5% 2rem;
+        gap: 2.6rem;
+    }
+
+    .apresentacao__inicial {
+        gap: 21.6px;
+    }
+
+    .apresentacao__inicial__titulo {
+        font-size: 1.38rem;
+    }
+
+    .apresentacao__inicial__texto {
+        font-size: 1.08rem;
+        width: 396px;
+    }
+
+    .painel__apresentacao {
+        flex-direction: column;
+        gap: 21.6px;
+    }
+
+    .apresentacao__box {
+        padding: 54px 3.5% 18px;
+        gap: 21.6px;
+    }
+
+    .apresentacao__links__box__primario {
+        width: 100%;
+        gap: 18px;
+    }
+
+    .apresentacao__links__box__secundario {
+        width: 360px;
+        align-items: unset;
+        justify-content: center;
+        flex-direction: unset;
+        flex-wrap: wrap;
+        gap: 13px;
+    }
+
+    .apresentacao__links__subtitulo__box {
+        width: 135px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apresentacao__links__subtitulo {
+        font-size: 0.8rem;
+
+    }
+
+    .apresentacao__links__botao {
+        width: 130px;
+        font-size: 0.84rem;
+        padding: 9px 0;
+        border: 0.1rem solid var(--cor-tercearia);
+    }
+
+    .sobre__mim__box {
+        padding: 3rem 3.5% 1rem;
+        gap: 14.42px;
+    }
+
+    .sobre__mim__titulo {
+        font-size: 1.38rem;
+        width: 324px;
+    }
+
+    .sobre__mim__paragrado {
+        font-size: 1.14rem;
+        width: 368px;
+    }
+
+    .chuck__img__about {
+        width: 360px;
+    }
+
+    .chuck__box {
+        justify-content: center;
+        width: 80%;
+    }
+
+    .chuck__img {
+        width: 360px;
+    }
+
+    .imglogo {
+        width: 22px;
+    }
+
+    .ref__box {
+        padding: 15px 0;
+    }
+
+    .dev__link__box {
+        padding-bottom: 15px;
+        gap: 1.2rem;
+    }
+
+    .dev__link {
+        font-size: 0.85rem;
+        width: 7rem;
+    }
+
+    .devtxt {
+        font-size: 1.2rem;
+    }
+
+    .florktxt {
+        font-size: 1rem;
+    }
+
+    .florkimg {
+        width: 108px;
+    }
+
+    .rodape {
+        gap: 10.8px;
+        padding: 10.8px 0 3.375px;
+    }
+
+    .dev__logo__link {
+        width: 22px;
+    }
+
+    .dev__link__box {
+        gap: 16.56px;
+    }
+
+    .dev__link {
+        font-size: 0.8rem;
+        width: 110px;
+    }
+
+    .devtxt {
+        font-size: 0.9rem;
+        padding-block: 10.8px;
+    }
+
+    .txt__creditos {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .cabecalho {
+        padding: 0 2rem;
+    }
+
+
+    .cabecalho__menu__link {
+        font-size: 0.8rem;
+    }
+
+    .apresentacao__box {
+        padding: 3rem 3.5% 1rem;
+        gap: 14.42px;
+    }
+
+    .apresentacao__inicial {
+        gap: 9.6px;
+    }
+
+    .apresentacao__inicial__texto {
+        font-size: 0.8rem;
+    }
+
+    .apresentacao__inicial__titulo {
+        font-size: 0.8rem;
+    }
+
+    .apresentacao__links__box__primario {
+        gap: 18px;
+    }
+
+    .apresentacao__links__subtitulo__box {
+        width: 7.5rem;
+    }
+
+    .apresentacao__links__subtitulo {
+        font-size: 0.8rem;
+    }
+
+    .apresentacao__links__box__secundario {
+        gap: 13px;
+        width: 320px;
+    }
+
+    .span1 {
+        padding-inline: 4.162px;
+        ;
+    }
+
+    .span2 {
+        font-weight: 600;
+        padding: 0.3rem 1rem 6.35px;
+    }
+
+    .painel__apresentacao {
+        gap: 18px;
+    }
+
+
+    .apresentacao__inicial__titulo {
+        font-size: 0.8rem;
+        width: 13rem;
+    }
+
+    .apresentacao__inicial__texto {
+        font-size: 0.8rem;
+        width: 17rem;
+        font-weight: 600;
+    }
+
+    .chuck__img {
+        width: 280px;
+    }
+
+    .apresentacao__links__botao {
+        width: 130px;
+        font-size: 0.8rem;
+        padding: 9px 0;
+    }
+
+    .sobre__mim__texto__box {
+        width: 260px;
+    }
+
+    .sobre__mim__paragrado {
+        font-size: 0.8rem;
+        width: 269.1px;
+    }
+
+    .sobre__mim__titulo {
+        font-size: 0.8rem;
+        width: 200px;
+    }
+
+    .chuck__img__about {
+        width: 280px;
+    }
+
+    .imglogo {
+        width: 22px;
+    }
+
+    .rodape {
+        gap: 10.8px;
+        padding: 10.8px 0 0.9px 0;
+    }
+
+    .florktxt {
+        font-size: 1rem;
+        font-weight: 900;
+    }
+
+    .florkimg {
+        width: 6rem;
+    }
+
+    .dev__link__box {
+        gap: 0.8rem;
+    }
+
+    .dev__link {
+        width: 110px;
+        font-size: 0.8rem;
+    }
+
+    .dev__logo__link {
+        width: 22px;
+
+    }
+
+    .devtxt {
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+    }
+
+    .span1 {
+        padding-bottom: 14.4px;
+    }
+
+    .txt__creditos {
+        font-size: 0.9rem;
+    }
+}
