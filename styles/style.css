@@ -512,7 +512,7 @@ body {
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1000px) {
 
     .florktxt {
         font-weight: 900;
