@@ -518,6 +518,17 @@ body {
         font-weight: 900;
     }
 
+    .apresentacao__links__subtitulo__box {
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apresentacao__links__subtitulo {
+        font-size: max(1.95vw, 0.7rem);
+
+    }
 }
 
 @media (orientation: portrait) {
@@ -596,7 +607,7 @@ body {
     }
 
     .apresentacao__links__botao {
-        min-width: 117.5px;
+        min-width: 110px;
         width: 35vw;
         font-size: var(--tamanho-fonte-vertical-1);
         border: var(--borda-vertical-2) solid var(--cor-tercearia);
@@ -669,7 +680,6 @@ body {
         padding-block: var(--padding-block-2);
         border: var(--borda-vertical-2) solid var(--cor-tercearia);
         border-radius: var(--border-radius-3);
-        min-width: 110px;
     }
 
     .devtxt {
