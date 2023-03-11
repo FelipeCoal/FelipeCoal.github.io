@@ -22,9 +22,9 @@
     --tamanho-fonte-horizontal-2: 2.5vw;
     --tamanho-fonte-horizontal-3: 2vw;
     
-    --tamanho-fonte-vertical-1: 1.9rem;
-    --tamanho-fonte-vertical-2: 1.7rem;
-    --tamanho-fonte-vertical-3: 1.5rem;
+    --tamanho-fonte-vertical-1: 1.2rem;
+    --tamanho-fonte-vertical-2: 1.1rem;
+    --tamanho-fonte-vertical-3: 1rem;
 
     --borda-full-1: 0.2vw;
     --borda-full-2: 0.1vw;
@@ -88,7 +88,6 @@
 }
 
 body {
-    min-width: 700px;
     box-sizing: border-box;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
@@ -696,6 +695,9 @@ body {
     .cabecalho {
         padding-inline: 2rem;
     }
+    .cabecalho__menu{
+        gap: 1rem;
+    }
 
     .span2 {
         padding: 0.3rem 1rem 0.45rem;
@@ -719,10 +721,9 @@ body {
     }
 
     .apresentacao__inicial__texto {
-        font-size: var(--tamanho-fonte-vertical-1);
+        font-size: var(--tamanho-fonte-vertical-2);
         width: 95%;
         font-weight: 600;
-        min-width: 24rem;
     }
 
     .painel__apresentacao {
@@ -731,7 +732,7 @@ body {
     }
 
     .apresentacao__links__box__primario {
-        width: 85%;
+        width: 100%;
         gap: 1.5rem;
     }
 
@@ -741,14 +742,15 @@ body {
         justify-content: center;
         flex-direction: unset;
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .apresentacao__links__subtitulo__box {
-        width: 14rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        min-width: fit-content;
+        padding: 0.5rem;
     }
 
     .apresentacao__links__subtitulo {
@@ -759,8 +761,10 @@ body {
     .apresentacao__links__botao {
         width: 40%;
         font-size: var(--tamanho-fonte-vertical-2);
-        padding: 0.5rem 0;
+        padding: 0.5rem;
         border: 0.1rem solid var(--cor-tercearia);
+        min-width: fit-content;
+        /* max-width: max-content; */
     }
 
     .sobre__mim__box {
@@ -797,7 +801,7 @@ body {
     }
 
     .imglogo {
-        width: 20%;
+        width: 1.5rem;
     }
 
     .florktxt {
@@ -825,6 +829,8 @@ body {
     .dev__link {
         font-size: var(--tamanho-fonte-vertical-2);
         width: 40%;
+        min-width: fit-content;
+        padding: 0.5rem;
     }
 
     .devtxt {
@@ -832,7 +838,7 @@ body {
     }
 
     .dev__logo__link {
-        width: 20%;
+        width: 1.5rem;
     }
 
     .txt__creditos {
