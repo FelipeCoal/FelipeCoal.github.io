@@ -232,7 +232,7 @@ body {
 }
 
 .sobre__mim__texto__box {
-    width: 1275.190px;
+    width: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,7 +245,7 @@ body {
     font-size: 4.75rem;
     color: var(--cor-tercearia);
     font-family: var(--fonte-primaria);
-    width: 1125.190px;
+    width: 75%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -472,13 +472,13 @@ body {
     }
 
     .sobre__mim__texto__box {
-        width: 34.01rem;
+        width: 85%;
         gap: 2rem;
     }
 
     .sobre__mim__titulo {
         font-size: var(--tamanhofonte-primaria);
-        width: 30rem;
+
     }
 
     .sobre__mim__paragrado {
@@ -573,7 +573,7 @@ body {
 
     .apresentacao__inicial__texto {
         font-size: 1.2rem;
-        width: 417px;
+        width: 406px;
     }
 
     .painel__apresentacao {
@@ -621,7 +621,6 @@ body {
 
     .sobre__mim__titulo {
         font-size: 1.38rem;
-        width: 324px;
     }
 
     .sobre__mim__paragrado {
@@ -774,13 +773,14 @@ body {
 
     .sobre__mim__titulo {
         font-size: var(--tamanho-fonte-vertical-1);
-        width: 70%;
     }
 
     .sobre__mim__paragrado {
         font-size: var(--tamanho-fonte-vertical-2);
         width: 85%;
-        min-width: 23, 875rem;
+    }
+    .sobre__mim__texto__box{
+        width: 85%;
     }
 
     .chuck__img__about {
