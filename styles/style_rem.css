@@ -3,7 +3,7 @@
 :root {
     --cor-primaria: #000000;
     --cor-secundaria: #FFFFFF;
-    --cor-tercearia: #ad5555;
+    --cor-tercearia: #cd6f6f;
     --cor-quartenaria: #302e2e;
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -12,6 +12,56 @@
     --tamanhofonte-secundaria: 1.8rem;
     --tamanhofonte-terceario: 1.4rem;
     --tamanhofonte-quartenaria: 1.25rem;
+
+    --tamanho-fonte-full-1: 2.2vw;
+    --tamanho-fonte-full-2: 1.8vw;
+    --tamanho-fonte-full-3: 1.5vw;
+    --tamanho-fonte-full-4: 1.2vw;
+
+    --tamanho-fonte-horizontal-1: 3vw;
+    --tamanho-fonte-horizontal-2: 2.5vw;
+    --tamanho-fonte-horizontal-3: 2vw;
+
+    --tamanho-fonte-vertical-1: 1.8rem;
+    --tamanho-fonte-vertical-2: 1.7rem;
+    --tamanho-fonte-vertical-3: 1.4rem;
+
+    --borda-full-1: 0.2vw;
+    --borda-full-2: 0.1vw;
+
+    --borda-vertical-1: 0.5vw;
+    --borda-vertical-2: 0.2vw;
+
+    --borda-horizontal-1: 0.25vw;
+    --borda-horizontal-2: 0.1vw;
+
+    --border-radius-1: 3vw;
+    --border-radius-2: 1.5vw;
+    --border-radius-3: 1vw;
+
+    --border-radius-horizontal-1: 1.5vw;
+    --border-radius-horizontal-2: 0.75vw;
+    --border-radius-horizontal-3: 0.5vw;
+
+    --gap-full-1: 2vw;
+    --gap-full-2: 1.4vw;
+
+    --gap-vertical-1: 5vw;
+    --gap-vertical-2: 2.5vw;
+
+    --gap-horizontal-1: 2.5vw;
+    --gap-horizontal-2: 1.25vw;
+
+    --padding-block-1: 1.5vw;
+    --padding-block-2: 0.8vw;
+    --padding-block-3: 0.5vw;
+
+    --padding-block-horizontal-1: 0.75vw;
+    --padding-block-horizontal-2: 0.4vw;
+    --padding-block-horizontal-3: 0.25vw;
+
+    --padding-top-1: 12vw;
+    --padding-top-horizontal-1: 9vw;
 }
 
 * {
@@ -655,7 +705,7 @@ body {
 
 @media (orientation:portrait) {
     .cabecalho__menu__link {
-            font-size: 0.9rem;
+            font-size: var(--tamanho-fonte-vertical-2);
         }
     
         .cabecalho {
@@ -663,7 +713,7 @@ body {
         }
     
         .span2 {
-            padding: 0.3rem 1rem 7.2px;
+            padding: 0.3rem 1rem 0.45rem;
         }
     
         .span1 {
@@ -676,143 +726,132 @@ body {
         }
     
         .apresentacao__inicial {
-            gap: 21.6px;
+            gap: 1.35rem;
         }
     
         .apresentacao__inicial__titulo {
-            font-size: 1.2rem;
+            font-size: var(--tamanho-fonte-vertical-1);
         }
     
         .apresentacao__inicial__texto {
-            font-size: 1.1rem;
-            width: 382px;
+            font-size: var(--tamanho-fonte-vertical-1);
+            width: 95%;
+            font-weight: 600;
         }
     
         .painel__apresentacao {
             flex-direction: column;
-            gap: 21.6px;
+            gap: 1.35rem;
         }
     
         .apresentacao__box {
-            padding: 54px 3.5% 18px;
-            gap: 21.6px;
+            padding: 5rem 3.5% 1rem;
+            gap: 1.35rem;
         }
     
         .apresentacao__links__box__primario {
-            width: 100%;
-            gap: 18px;
+            width: 85%;
+            gap: 1.5rem;
         }
     
         .apresentacao__links__box__secundario {
-            width: 360px;
+            width: 100%;
             align-items: unset;
             justify-content: center;
             flex-direction: unset;
             flex-wrap: wrap;
-            gap: 13px;
+            gap: 2rem;
         }
     
         .apresentacao__links__subtitulo__box {
-            width: 135px;
+            width: 14rem;
             display: flex;
             justify-content: center;
             align-items: center;
         }
     
         .apresentacao__links__subtitulo {
-            font-size: 0.8rem;
+            font-size: var(--tamanho-fonte-vertical-2);
     
         }
     
         .apresentacao__links__botao {
-            width: 130px;
-            font-size: 0.84rem;
-            padding: 9px 0;
+            width: 14rem;
+            font-size: var(--tamanho-fonte-vertical-2);
+            padding: 0.5rem 0;
             border: 0.1rem solid var(--cor-tercearia);
         }
     
         .sobre__mim__box {
-            padding: 3rem 3.5% 1rem;
-            gap: 14.42px;
+            padding: 5rem 3.5% 2rem;
+            gap: 2rem;
         }
     
         .sobre__mim__titulo {
-            font-size: 1.38rem;
-            width: 324px;
+            font-size: var(--tamanho-fonte-vertical-1);
+            width: 70%;
         }
     
         .sobre__mim__paragrado {
-            font-size: 1.14rem;
-            width: 368px;
+            font-size: var(--tamanho-fonte-vertical-2);
+            width: 85%;
         }
-    
+
         .chuck__img__about {
-            width: 360px;
+            width: 85%;
         }
-    
+        .chuck__box__about{
+            width: 100%;
+        }
         .chuck__box {
             justify-content: center;
-            width: 80%;
+            width: 100%;
         }
     
         .chuck__img {
-            width: 360px;
+            width: 85%;
         }
     
         .imglogo {
-            width: 22px;
+            width: 2.4rem;
         }
     
         .ref__box {
-            padding: 15px 0;
+            padding: 1rem 0;
         }
     
         .dev__link__box {
-            padding-bottom: 15px;
+            padding-bottom: 1rem;
             gap: 1.2rem;
         }
     
         .dev__link {
-            font-size: 0.85rem;
-            width: 7rem;
+            font-size: var(--tamanho-fonte-vertical-2);
+            width: 12rem;
         }
     
         .devtxt {
-            font-size: 1.2rem;
+            font-size: var(--tamanho-fonte-vertical-2);
         }
     
         .florktxt {
-            font-size: 1rem;
+            font-size: var(--tamanho-fonte-vertical-2);
         }
     
         .florkimg {
-            width: 108px;
+            width: 11rem;
         }
     
         .rodape {
-            gap: 10.8px;
-            padding: 10.8px 0 3.375px;
+            gap: 1rem;
+            padding: 1rem 0 0.3rem;
         }
     
         .dev__logo__link {
-            width: 22px;
+            width: 2.4rem;
         }
-    
-        .dev__link__box {
-            gap: 16.56px;
-        }
-    
-        .dev__link {
-            font-size: 0.8rem;
-            width: 110px;
-        }
-    
-        .devtxt {
-            font-size: 0.9rem;
-            padding-block: 10.8px;
-        }
-    
+
         .txt__creditos {
-            font-size: 0.9rem;
+            font-size: var(--tamanho-fonte-vertical-2)
         }
     }
