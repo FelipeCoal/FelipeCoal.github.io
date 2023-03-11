@@ -21,10 +21,10 @@
     --tamanho-fonte-horizontal-1: 3vw;
     --tamanho-fonte-horizontal-2: 2.5vw;
     --tamanho-fonte-horizontal-3: 2vw;
-
-    --tamanho-fonte-vertical-1: 1.8rem;
+    
+    --tamanho-fonte-vertical-1: 1.9rem;
     --tamanho-fonte-vertical-2: 1.7rem;
-    --tamanho-fonte-vertical-3: 1.4rem;
+    --tamanho-fonte-vertical-3: 1.5rem;
 
     --borda-full-1: 0.2vw;
     --borda-full-2: 0.1vw;
@@ -88,7 +88,7 @@
 }
 
 body {
-    min-width: 400px;
+    min-width: 700px;
     box-sizing: border-box;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
@@ -101,7 +101,7 @@ body {
 .span1 {
     color: var(--cor-tercearia);
     border: 1px solid var(--cor-tercearia);
-    padding-inline:  18.7px;
+    padding-inline: 18.7px;
     background-color: var(--cor-primaria);
 }
 
@@ -326,6 +326,9 @@ body {
     display: flex;
     gap: 56.4px;
     padding-bottom: 37.6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .dev__link {
@@ -402,7 +405,7 @@ body {
         white-space: nowrap;
         color: var(--cor-tercearia);
         border: 1px solid var(--cor-tercearia);
-        padding-inline:  0.5rem;
+        padding-inline: 0.5rem;
         background-color: var(--cor-primaria);
     }
 
@@ -579,11 +582,6 @@ body {
         gap: 21.6px;
     }
 
-    .apresentacao__box {
-        padding: 54px 3.5% 18px;
-        gap: 21.6px;
-    }
-
     .apresentacao__links__box__primario {
         width: 100%;
         gap: 18px;
@@ -684,19 +682,6 @@ body {
         width: 22px;
     }
 
-    .dev__link__box {
-        gap: 16.56px;
-    }
-
-    .dev__link {
-        font-size: 0.8rem;
-        width: 110px;
-    }
-
-    .devtxt {
-        font-size: 0.9rem;
-        padding-block: 10.8px;
-    }
 
     .txt__creditos {
         font-size: 0.9rem;
@@ -705,153 +690,152 @@ body {
 
 @media (orientation:portrait) {
     .cabecalho__menu__link {
-            font-size: var(--tamanho-fonte-vertical-2);
-        }
-    
-        .cabecalho {
-            padding-inline: 2rem;
-        }
-    
-        .span2 {
-            padding: 0.3rem 1rem 0.45rem;
-        }
-    
-        .span1 {
-            padding-inline: 5.4px;
-        }
-    
-        .apresentacao__box {
-            padding: 4rem 3.5% 2rem;
-            gap: 2.6rem;
-        }
-    
-        .apresentacao__inicial {
-            gap: 1.35rem;
-        }
-    
-        .apresentacao__inicial__titulo {
-            font-size: var(--tamanho-fonte-vertical-1);
-        }
-    
-        .apresentacao__inicial__texto {
-            font-size: var(--tamanho-fonte-vertical-1);
-            width: 95%;
-            font-weight: 600;
-        }
-    
-        .painel__apresentacao {
-            flex-direction: column;
-            gap: 1.35rem;
-        }
-    
-        .apresentacao__box {
-            padding: 5rem 3.5% 1rem;
-            gap: 1.35rem;
-        }
-    
-        .apresentacao__links__box__primario {
-            width: 85%;
-            gap: 1.5rem;
-        }
-    
-        .apresentacao__links__box__secundario {
-            width: 100%;
-            align-items: unset;
-            justify-content: center;
-            flex-direction: unset;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-    
-        .apresentacao__links__subtitulo__box {
-            width: 14rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    
-        .apresentacao__links__subtitulo {
-            font-size: var(--tamanho-fonte-vertical-2);
-    
-        }
-    
-        .apresentacao__links__botao {
-            width: 14rem;
-            font-size: var(--tamanho-fonte-vertical-2);
-            padding: 0.5rem 0;
-            border: 0.1rem solid var(--cor-tercearia);
-        }
-    
-        .sobre__mim__box {
-            padding: 5rem 3.5% 2rem;
-            gap: 2rem;
-        }
-    
-        .sobre__mim__titulo {
-            font-size: var(--tamanho-fonte-vertical-1);
-            width: 70%;
-        }
-    
-        .sobre__mim__paragrado {
-            font-size: var(--tamanho-fonte-vertical-2);
-            width: 85%;
-        }
-
-        .chuck__img__about {
-            width: 85%;
-        }
-        .chuck__box__about{
-            width: 100%;
-        }
-        .chuck__box {
-            justify-content: center;
-            width: 100%;
-        }
-    
-        .chuck__img {
-            width: 85%;
-        }
-    
-        .imglogo {
-            width: 2.4rem;
-        }
-    
-        .ref__box {
-            padding: 1rem 0;
-        }
-    
-        .dev__link__box {
-            padding-bottom: 1rem;
-            gap: 1.2rem;
-        }
-    
-        .dev__link {
-            font-size: var(--tamanho-fonte-vertical-2);
-            width: 12rem;
-        }
-    
-        .devtxt {
-            font-size: var(--tamanho-fonte-vertical-2);
-        }
-    
-        .florktxt {
-            font-size: var(--tamanho-fonte-vertical-2);
-        }
-    
-        .florkimg {
-            width: 11rem;
-        }
-    
-        .rodape {
-            gap: 1rem;
-            padding: 1rem 0 0.3rem;
-        }
-    
-        .dev__logo__link {
-            width: 2.4rem;
-        }
-
-        .txt__creditos {
-            font-size: var(--tamanho-fonte-vertical-2)
-        }
+        font-size: var(--tamanho-fonte-vertical-2);
     }
+
+    .cabecalho {
+        padding-inline: 2rem;
+    }
+
+    .span2 {
+        padding: 0.3rem 1rem 0.45rem;
+    }
+
+    .span1 {
+        padding-inline: 0.3rem;
+    }
+
+    .apresentacao__box {
+        padding: 4rem 3.5% 2rem;
+        gap: 2.6rem;
+    }
+
+    .apresentacao__inicial {
+        gap: 1.35rem;
+    }
+
+    .apresentacao__inicial__titulo {
+        font-size: var(--tamanho-fonte-vertical-1);
+    }
+
+    .apresentacao__inicial__texto {
+        font-size: var(--tamanho-fonte-vertical-1);
+        width: 95%;
+        font-weight: 600;
+        min-width: 24rem;
+    }
+
+    .painel__apresentacao {
+        flex-direction: column;
+        gap: 1.35rem;
+    }
+
+    .apresentacao__links__box__primario {
+        width: 85%;
+        gap: 1.5rem;
+    }
+
+    .apresentacao__links__box__secundario {
+        width: 100%;
+        align-items: unset;
+        justify-content: center;
+        flex-direction: unset;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .apresentacao__links__subtitulo__box {
+        width: 14rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apresentacao__links__subtitulo {
+        font-size: var(--tamanho-fonte-vertical-2);
+
+    }
+
+    .apresentacao__links__botao {
+        width: 40%;
+        font-size: var(--tamanho-fonte-vertical-2);
+        padding: 0.5rem 0;
+        border: 0.1rem solid var(--cor-tercearia);
+    }
+
+    .sobre__mim__box {
+        padding: 5rem 3.5% 2rem;
+        gap: 2rem;
+    }
+
+    .sobre__mim__titulo {
+        font-size: var(--tamanho-fonte-vertical-1);
+        width: 70%;
+    }
+
+    .sobre__mim__paragrado {
+        font-size: var(--tamanho-fonte-vertical-2);
+        width: 85%;
+        min-width: 23, 875rem;
+    }
+
+    .chuck__img__about {
+        width: 85%;
+    }
+
+    .chuck__box__about {
+        width: 100%;
+    }
+
+    .chuck__box {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .chuck__img {
+        width: 85%;
+    }
+
+    .imglogo {
+        width: 20%;
+    }
+
+    .florktxt {
+        font-size: var(--tamanho-fonte-vertical-1);
+    }
+
+    .florkimg {
+        width: 35%;
+    }
+
+    .rodape {
+        gap: 1rem;
+        padding: 1rem 0 0.3rem;
+    }
+
+    .ref__box {
+        padding: 1rem 0;
+    }
+
+    .dev__link__box {
+        padding-bottom: 1rem;
+        gap: 1.2rem;
+    }
+
+    .dev__link {
+        font-size: var(--tamanho-fonte-vertical-2);
+        width: 40%;
+    }
+
+    .devtxt {
+        font-size: var(--tamanho-fonte-vertical-2);
+    }
+
+    .dev__logo__link {
+        width: 20%;
+    }
+
+    .txt__creditos {
+        font-size: var(--tamanho-fonte-vertical-2)
+    }
+}
