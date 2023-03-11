@@ -559,7 +559,7 @@ body {
     }
 
     .apresentacao__box {
-        padding: 4rem 3.5% 2rem;
+        padding: 5rem 3.5% 2rem;
         gap: 2.6rem;
     }
 
@@ -625,7 +625,7 @@ body {
 
     .sobre__mim__paragrado {
         font-size: 1.14rem;
-        width: 368px;
+        width: 70%
     }
 
     .chuck__img__about {
@@ -707,7 +707,7 @@ body {
     }
 
     .apresentacao__box {
-        padding: 5rem 3.5% 2rem;
+        padding: 4rem 3.5% 2rem;
         gap: 2.6rem;
     }
 
@@ -763,7 +763,6 @@ body {
         padding: 0.5rem;
         border: 0.1rem solid var(--cor-tercearia);
         min-width: fit-content;
-        /* max-width: max-content; */
     }
 
     .sobre__mim__box {
