@@ -423,7 +423,7 @@ body {
     }
 
     .apresentacao__inicial__texto {
-        font-size: var(--tamanho-fonte-horizontal-1);
+        font-size: var(--tamanho-fonte-horizontal-2);
         width: 62vw;
 
         font-weight: 600;
