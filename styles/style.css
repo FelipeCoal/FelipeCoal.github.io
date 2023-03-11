@@ -10,10 +10,10 @@
     --fonte-secundaria: 'Montserrat', sans-serif;
     --fonte-tercearia: 'Tilt Neon', sans-serif;
 
-    --tamanhofonte-primaria: 2.155vw;
-    --tamanhofonte-secundaria: 1.8vw;
-    --tamanhofonte-terceario: 1.5vw;
-    --tamanhofonte-quartenaria: 1.2vw;
+    --tamanho-fonte-full-1: 2.2vw;
+    --tamanho-fonte-full-2: 1.8vw;
+    --tamanho-fonte-full-3: 1.5vw;
+    --tamanho-fonte-full-4: 1.2vw;
 
     --tamanho-fonte-horizontal-1: 3vw;
     --tamanho-fonte-horizontal-2: 2.5vw;
@@ -22,6 +22,9 @@
     --tamanho-fonte-vertical-1: 4.5vw;
     --tamanho-fonte-vertical-2: 4vw;
     --tamanho-fonte-vertical-3: 3.5vw;
+
+    --borda-full-1: 0.2vw;
+    --borda-full-2: 0.1vw;
 
     --borda-vertical-1: 0.5vw;
     --borda-vertical-2: 0.2vw;
@@ -37,13 +40,14 @@
     --border-radius-horizontal-2: 0.75vw;
     --border-radius-horizontal-3: 0.5vw;
 
+    --gap-full-1: 2vw;
+    --gap-full-2: 1.4vw;
+
     --gap-vertical-1: 5vw;
     --gap-vertical-2: 2.5vw;
 
     --gap-horizontal-1: 2.5vw;
     --gap-horizontal-2: 1.25vw;
-
-    --border-radius: 0.3rem;
 
     --padding-block-1: 1.5vw;
     --padding-block-2: 0.8vw;
@@ -68,16 +72,16 @@
 
 .cabecalho__menu {
     display: flex;
-    gap: max(2.8vw, 3rem);
-    height: 0.2rem;
+    gap: 3.8vw;
+    height: var(--borda-full-1);
 }
 
 .cabecalho__menu__link {
     text-decoration: none;
-    font-size: max(1.5vw, 1.57rem);
+    font-size: var(--tamanho-fonte-full-3);
     font-family: var(--fonte-secundaria);
     font-weight: 600;
-    padding-top: 0.4rem;
+    padding-top: 0.5vw;
 }
 
 body {
@@ -94,17 +98,15 @@ body {
 .span1 {
     white-space: nowrap;
     color: var(--cor-tercearia);
-    border: 0.1rem solid var(--cor-tercearia);
-    padding-inline: max(0.5rem, 0.469vw);
+    border: var(--borda-full-2) solid var(--cor-tercearia);
+    padding-inline: 0.5vw;
     background-color: var(--cor-primaria);
 }
 
 .span2 {
     color: var(--cor-tercearia);
-    border: 0.2rem solid var(--cor-tercearia);
-    padding-top: 2rem;
-    padding-inline: max(1rem, 0.94vw);
-    padding-bottom: max(0.6rem, 0.5625vw);
+    border: var(--borda-full-1) solid var(--cor-tercearia);
+    padding: 2vw 1vw 0.5vw;
     background-color: var(--cor-primaria);
 }
 
@@ -113,24 +115,22 @@ body {
 }
 
 .apresentacao__box {
-    padding-top: max(7rem, 4.6875vw);
-    padding-inline: 3.5%;
-    padding-bottom: max(3rem, 2.8125vw);
+    padding: 4.5vw 3.5vw 3vw;
     display: flex;
     flex-direction: column;
-    gap: max(2rem, 1.875vw);
+    gap: var(--gap-full-1);
 }
 
 .apresentacao__inicial {
     display: flex;
     flex-direction: column;
-    gap: max(2rem, 1.875975vw);
+    gap: var(--gap-full-1);
     text-align: center;
     align-items: center;
 }
 
 .apresentacao__inicial__titulo {
-    font-size: max(2.15625vw, 2.3rem);
+    font-size: var(--tamanho-fonte-full-1);
     font-family: var(--fonte-primaria);
     text-align: center;
     min-width: 280px;
@@ -139,8 +139,8 @@ body {
 
 .apresentacao__inicial__texto {
     min-width: 17rem;
-    width: max(33.75vw, 36rem);
-    font-size: max(1.6875vw, 1.8rem);
+    width: 37vw;
+    font-size: var(--tamanho-fonte-full-2);
     font-family: var(--fonte-secundaria);
 }
 
@@ -149,16 +149,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: max(2rem, 1.875vw);
+    gap: var(--gap-full-1);
 }
 
 .apresentacao__links__box__primario {
     flex-direction: column;
-    width: max(18rem, 16.38vw);
+    width: 17vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: max(1.2rem, 1.125585vw);
+    gap: var(--gap-full-2);
 }
 
 .apresentacao__links__box__secundario {
@@ -166,11 +166,12 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: max(1.5rem, 1.40625vw);
+    gap: var(--gap-full-2);
 }
 
 .apresentacao__links__subtitulo__box {
-    width: max(11.2508vw, 12rem);
+    width: 11vw;
+    min-width: 6.3rem;
     border-radius: 0.3rem;
     display: flex;
     justify-content: center;
@@ -181,26 +182,27 @@ body {
 .apresentacao__links__subtitulo {
     font-family: var(--fonte-secundaria);
     font-weight: 600;
-    font-size: max(1.21875vw, 1.3rem);
+    font-size: var(--tamanho-fonte-full-4);
     color: var(--cor-primaria);
     text-align: center;
     line-height: 1.6;
 }
 
 .apresentacao__links__botao {
-    width: max(12rem, 11.25081vw);
+    width: 12vw;
+    min-width: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0.3rem;
-    font-size: max(1.3125vw, 1.4rem);
+    border-radius: 0.3vw;
+    font-size: var(--tamanho-fonte-full-4);
     font-weight: 600;
     text-decoration: none;
-    border: 0.15rem solid var(--cor-tercearia);
+    border: var(--borda-full-2) solid var(--cor-tercearia);
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
-    padding-block: max(0.5rem, 0.46875vw);
+    padding-block: 0.5vw;
 }
 
 .apresentacao__links__botao:hover {
@@ -208,7 +210,7 @@ body {
 }
 
 .imglogo {
-    width: max(2rem, 1.875vw);
+    width: 2.5vw;
 }
 
 .chuck__box {
@@ -217,9 +219,9 @@ body {
 }
 
 .chuck__img {
-    border: 0.15rem solid var(--cor-tercearia);
-    border-radius: 0.3rem;
-    width: max(600px, 31.25vw);
+    border: var(--borda-full-2) solid var(--cor-tercearia);
+    border-radius: 0.3vw;
+    width: 35vw;
     min-width: 280px
 }
 
@@ -228,35 +230,33 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: max(5rem, 4.6875vw);
-    padding-inline: 3.5%;
-    padding-bottom: max(3rem, 2.8125vw);
-    gap: max(2rem, 1.875vw);
+    padding: 5vw 3.5vw 2.8vw;
+    gap: var(--gap-full-1);
 
 }
 
 .sobre__mim__texto__box {
-    width: max(34rem, 31.88vw);
+    width: 47vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: max(2rem, 1.875vw);
+    gap: var(--gap-full-1);
     text-align: center;
 }
 
 .sobre__mim__titulo {
-    font-size: max(2.3rem, 2.15vw);
+    font-size: var(--tamanho-fonte-full-1);
     color: var(--cor-tercearia);
     font-family: var(--fonte-primaria);
-    width: max(30rem, 28.13vw);
+    width: 30vw;
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
 .sobre__mim__paragrado {
-    font-size: max(1.78vw, 1.9rem);
+    font-size: var(--tamanho-fonte-full-2);
     font-family: var(--fonte-secundaria);
     font-style: italic;
     display: flex;
@@ -272,23 +272,23 @@ body {
 }
 
 .chuck__img__about {
-    width: max(600px, 31.25vw);
+    width: 35vw;
     min-width: 280px;
-    border: 0.15rem solid var(--cor-tercearia);
+    border: var(--borda-full-2) solid var(--cor-tercearia);
     border-radius: 0.3rem;
 }
 
 .rodape {
     background-color: var(--cor-tercearia);
     color: var(--cor-primaria);
-    padding-top: max(0.5rem, 0.47vw);
-    padding-bottom: max(0.9px, 0.46875vw);
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: max(1rem, 0.9375vw);
+    gap: var(--gap-full-2);
 }
 
 .rodape_flork_box {
@@ -301,16 +301,16 @@ body {
 .florktxt {
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: max(1.5vw, 1.6rem);
+    font-size: var(--tamanho-fonte-full-2);
     font-weight: 600;
 }
 
 .florkimg {
-    width: max(10rem, 9.376vw);
+    width: 10vw;
 }
 
 .creditos__box {
-    width: 99%;
+    width: 98%;
     border-radius: 0.3rem;
     background-color: var(--cor-primaria);
     display: flex;
@@ -319,18 +319,18 @@ body {
 }
 
 .devtxt {
-    font-size: max(1.2rem, 1.125vw);
+    font-size: var(--tamanho-fonte-full-3);
     color: var(--cor-tercearia);
     width: 100%;
     line-height: 1.4;
     font-family: var(--fonte-secundaria);
-    padding-block: max(0.94vw, 1rem);
+    padding-block: 1vw;
 }
 
 .dev__link__box {
     display: flex;
-    gap: max(1.5rem, 1.41vw);
-    padding-bottom: max(1rem, 0.94vw);
+    gap: var(--gap-full-2);
+    padding-bottom: 1vw;
 }
 
 .dev__link {
@@ -338,32 +338,32 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0.3rem;
+    border-radius: 0.3vw;
     font-weight: 600;
-    border: 0.05rem solid var(--cor-tercearia);
+    border: var(--borda-full-2) solid var(--cor-tercearia);
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
-    width: max(8.425vw, 9rem);
-    font-size: max(1.125vw, 1.2rem);
-    padding-block: max(0.25rem, 0.235vw);
+    width: 12vw;
+    font-size: var(--tamanho-fonte-full-3);
+    padding-block: 0.3vw;
 }
 
 .dev__logo__link {
-    width: max(2rem, 1.875vw);
+    width: 2.5vw;
 }
 
 .ref__box {
     color: var(--cor-tercearia);
     width: 100%;
     line-height: 1.7;
-    border: 0.05rem solid var(--cor-tercearia);
-    padding-block: max(1rem, 0.94vw);
+    border: var(--borda-full-2) solid var(--cor-tercearia);
+    padding-block: 1vw;
 }
 
 .txt__creditos {
     font-family: var(--fonte-secundaria);
-    font-size: max(1.125vw, 1.2rem);
+    font-size: var(--tamanho-fonte-full-3);
 }
 
 .creditos__link {
@@ -371,9 +371,9 @@ body {
     font-weight: 400;
     text-decoration: none;
     color: var(--cor-secundaria);
-    padding-inline: max(8px, 0.4167vw);
-    border: 0.05rem solid var(--cor-secundaria);
-    border-radius: 0.3rem;
+    padding-inline: 0.5vw;
+    border: var(--borda-full-2) solid var(--cor-secundaria);
+    border-radius: 0.3vw;
     line-height: 1.6;
 }
 
@@ -497,12 +497,14 @@ body {
 
     .sobre__mim__titulo {
         font-size: var(--tamanho-fonte-horizontal-2);
-        width: 45vw;
+        width: 38vw;
+        min-width: 195px;
     }
 
     .sobre__mim__paragrado {
         font-size: var(--tamanho-fonte-horizontal-2);
-        width: 50vw;
+        width: 47vw;
+        min-width: 280px;
     }
 
     .chuck__img__about {
@@ -674,16 +676,23 @@ body {
 
     .sobre__mim__titulo {
         font-size: var(--tamanho-fonte-vertical-2);
-        width: 45vw;
+        width: 52vw;
+        min-width: 232px;
     }
 
     .sobre__mim__paragrado {
         font-size: var(--tamanho-fonte-vertical-1);
-        width: 50vw;
+        width: 60vw;
+        min-width: 200px;
     }
 
     .chuck__img__about {
-        width: 50vw;
+        width: 80vw;
+        min-width: 280px;
+    }
+    .chuck__box__about {
+        justify-content: center;
+        width: 95%;
     }
 
 
